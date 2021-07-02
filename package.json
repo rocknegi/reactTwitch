@@ -1,0 +1,26 @@
+{
+  "name": "reacttwitch",
+  "version": "1.0.0",
+  "description": "1. git clone https://github.com/rocknegi/reactTwitch.git\r 2. cd reactTwitch\r 3. cd server\r 4. yarn install && yarn start\r 5. cd rtmpServer\r 6. yarn install && yarn start\r 7. cd client\r 8. yarn install && yarn start\r 9. open http://localhost:3000/",
+  "main": "index.js",
+  "scripts": {
+    "client": "npm start --prefix client",
+    "rtmpServer": "npm start --prefix rtmpServer",
+    "server": "npm start --prefix server",
+    "dev": "concurrently \"npm run server\" \"npm run rtmpServer\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rocknegi/reactTwitch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rocknegi/reactTwitch/issues"
+  },
+  "homepage": "https://github.com/rocknegi/reactTwitch#readme",
+  "devDependencies": {
+    "concurrently": "^6.1.0",
+    "nodemon": "^2.0.7"
+  }
+}
