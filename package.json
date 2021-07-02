@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "client": "npm start --prefix client",
+    "serve": "npm run build --prefix client",
     "rtmpServer": "npm start --prefix rtmpServer",
     "server": "npm start --prefix server",
-    "dev": "concurrently \"npm run server\" \"npm run rtmpServer\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run rtmpServer\" \"npm run client\"",
+    "deploy": "concurrently \"npm run server\" \"npm run rtmpServer\" \"npm run serve\""
   },
   "repository": {
     "type": "git",
