@@ -9,7 +9,8 @@
     "rtmpServer": "npm start --prefix rtmpServer",
     "server": "npm start --prefix server",
     "dev": "concurrently \"npm run server\" \"npm run rtmpServer\" \"npm run client\"",
-    "deploy": "concurrently \"npm run server\" \"npm run rtmpServer\" \"npm run serve\""
+    "deploy": "concurrently \"npm run server\" \"npm run rtmpServer\" \"npm run serve\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "repository": {
     "type": "git",
